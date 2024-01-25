@@ -1,0 +1,236 @@
+.Navbar-items_container-items-menu>button:active {
+  color: #376B44 !important;
+}
+
+.Navbar {
+  background-color: #E1EDE6;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.Navbar-items_container-logo-text {
+  color: #598D66;
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 8px;
+}
+
+.Navbar-items_container-logo {
+  display: flex;
+  align-items: center
+}
+
+.Navbar-items_container-items {
+  display: flex;
+  align-items: center;
+}
+
+
+.Navbar-items_container-items-basket {
+  margin-left: 58px;
+  height: 24px;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-image: url('D:\study\Ink-house\public\shopping-cart.png');
+}
+
+.Navbar-items_container-items-basket:hover {
+  background-image: url('D:\study\Ink-house\public\shopping-cart-hover.png');
+}
+
+.Navbar-items_container-items-basket:active {
+  background-image: url('D:\study\Ink-house\public\shopping-cart-active.png');
+  position: relative;
+  top: -1px;
+  left: -1px;
+}
+
+.mobil-logo {
+  display: none;
+}
+
+.Burger {
+  display: none;
+}
+
+.Navbar-items_container-items-menu_mobile {
+  display: none;
+}
+
+.Navbar-items_container-items-menu_mobile {
+  background-color: #E1EDE6;
+  align-items: flex-start
+}
+
+.Navbar-items_container-items-menu-button {
+  padding: 0;
+  font-family: Raleway;
+  font-weight: 500;
+}
+
+@media screen and (min-width : 768px) {
+  .Navbar {
+    height: 100px;
+  }
+
+  .Navbar-items_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Navbar-items_container-items-menu-button {
+    margin-left: 58px;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width : 768px) and (min-width: 431px) {
+  .Navbar {
+    height: 123px;
+  }
+
+  .Navbar-items_container {
+    display: flex;
+    flex-direction: column
+  }
+
+  .Navbar-items_container-logo {
+    justify-content: center;
+    padding-bottom: 16px;
+  }
+
+  .Navbar-items_container-items {
+    justify-content: space-between;
+    border-top: 1px #C3D1C6 solid;
+    padding-top: 16px;
+  }
+
+  .Navbar-items_container-items-menu-button {
+    margin: 0;
+    padding-right: 15%;
+    white-space: nowrap;
+    font-size: 18px;
+  }
+
+  .Navbar-items_container-items-menu {
+    display: flex;
+
+  }
+
+}
+
+@media screen and (max-width : 430px) {
+  .Navbar {
+    height: 62px;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .Navbar-items_container-items {
+    border: none;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .Navbar-items_container-logo {
+    padding: 0;
+  }
+
+  .mobil-logo {
+    display: flex;
+    justify-content: center;
+    height: 62px;
+  }
+
+  .Burger {
+    display: flex;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20.62px;
+    height: 16.88px;
+  }
+
+  .Burger span {
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+    background-color: #4C5866;
+  }
+
+  .Burger::after,
+  .Burger::before {
+    content: '';
+    position: absolute;
+    height: 2.12px;
+    width: 100%;
+    background-color: #4C5866;
+    transition: all .3s ease 0s;
+  }
+
+  .Burger::before {
+    top: 0;
+  }
+
+  .Burger::after {
+    bottom: 0;
+  }
+
+  .Burger.active span {
+    transform: scale(0);
+  }
+
+  .Burger.active::before {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(45deg);
+
+  }
+
+  .Burger.active::after {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-45deg);
+  }
+
+  .Navbar-items_container-items-menu {
+    display: none;
+  }
+
+  .Navbar-items_container-items-menu_mobile.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Navbar-items_container-items-basket.active {
+    display: none;
+  }
+
+  .Navbar-items_container-items-menu-button {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-bottom: 50px;
+  }
+
+  .Navbar-items_container-items-menu-button:first-child {
+    padding-top: 30px;
+  }
+
+}
+
+@media (hover:hover) {
+  .Navbar-items_container-items-menu>button:hover {
+    color: #598D66;
+  }
+}

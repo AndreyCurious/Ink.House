@@ -1,0 +1,147 @@
+.Reproductions-navbar-countries-item {
+  border: 1px #D4E8D9 solid;
+  padding-left: 0;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 10px 20px;
+  font-family: Raleway;
+  font-size: 18px;
+  background-color: #D4E8D9;
+}
+
+.Reproductions-navbar-countries-item.active {
+  background-color: #376B44;
+  color: #F4F6F5;
+}
+
+.Reproductions-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Reproductions {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.Reproductions-navbar-countries-item {
+  margin-bottom: 20px;
+}
+
+.Reproductions-cards {
+  display: grid;
+  justify-content: center;
+  gap: 1.35% 2.7%;
+}
+
+.loading {
+  height: 1000px;
+}
+
+@media screen and (min-width : 1024px) {
+  .Reproductions {
+    margin-top: 70px;
+  }
+
+  .Reproductions-navbar-title {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .Reproductions-navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Reproductions-navbar-countries-item {
+    margin-right: 32px;
+  }
+
+  .Reproductions-navbar-countries {
+    white-space: nowrap;
+  }
+
+  .Reproductions-cards {
+    grid-template-columns: 31.5333% 31.5333% 31.5333%;
+  }
+
+}
+
+@media screen and (min-width : 769px) and (max-width : 1024px) {
+  .Reproductions-navbar-title {
+    font-size: 30px;
+    padding-bottom: 20px;
+    margin-right: 63px;
+  }
+
+  .Reproductions-navbar {
+    flex-direction: row;
+  }
+
+  .Reproductions-navbar-countries-item {
+    margin-right: 28px;
+  }
+
+  .Reproductions-cards {
+    grid-template-columns: 50% 50%;
+  }
+
+}
+
+@media screen and (max-width : 768px) and (min-width: 431px) {
+  .Reproductions {
+    margin-top: 50px;
+  }
+
+  .Reproductions-navbar-title {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  .Reproductions-navbar-countries-item {
+    margin-right: 32px;
+  }
+
+  .Reproductions-cards {
+    grid-template-columns: 48% 48%;
+  }
+}
+
+@media screen and (max-width : 430px) {
+  .Reproductions {
+    margin-top: 60px;
+  }
+
+  .Reproductions-navbar-title {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  .Reproductions-navbar-countries-item {
+    margin-right: 20px;
+  }
+
+  .Reproductions-navbar-countries {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .Reproductions-navbar-countries::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .Reproductions-cards {
+    grid-template-columns: 100%;
+  }
+
+}
+
+@media (hover:hover) {
+  .Reproductions-navbar-countries-item:hover {
+    color: #F4F6F5;
+    background-color: #598D66;
+  }
+}

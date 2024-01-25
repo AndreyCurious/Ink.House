@@ -1,0 +1,164 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px 30px 20px;
+  background-color: #E1EDE6;
+}
+
+.Card.null {
+  background-color: #c3cec8;
+}
+
+.Card-author {
+  color: #86928B;
+  margin-bottom: 10px;
+}
+
+.Card-title {
+  color: #2C2D35;
+  margin: 0;
+}
+
+.Card-materials {
+  color: #2C2D35;
+  margin-bottom: 30px;
+}
+
+.Card-price {
+  color: #598D66;
+}
+
+.Card-tobasket {
+  border: 1px #598D66 solid;
+  padding: 20px 0;
+  color: #598D66;
+  font-size: 20px;
+}
+
+.Card>img {
+  width: 100%;
+}
+
+@media screen and (min-width : 1024px) {
+  .Card>img {
+    margin-bottom: 20px;
+  }
+
+  .Card-author {
+    font-size: 18px;
+  }
+
+  .Card-title {
+    font-style: 30px;
+    margin-bottom: 8px;
+  }
+
+  .Card-materials {
+    font-size: 18px;
+  }
+
+  .Card-price {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .Card.null {
+    height: 650px;
+  }
+}
+
+@media screen and (min-width : 769px) and (max-width : 1024px) {
+  .Card>img {
+    margin-bottom: 20px;
+  }
+
+  .Card-author {
+    font-size: 18px;
+  }
+
+  .Card-title {
+    font-style: 30px;
+    margin-bottom: 8px;
+  }
+
+  .Card-materials {
+    font-size: 18px;
+  }
+
+  .Card-price {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .Card.null {
+    height: 718px;
+  }
+}
+
+@media screen and (max-width : 768px) and (min-width: 431px) {
+  .Card {
+    max-width: 240px;
+  }
+
+  .Card>img {
+    margin-bottom: 15px;
+  }
+
+  .Card-author {
+    font-size: 16px;
+  }
+
+  .Card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .Card-materials {
+    font-size: 16px;
+  }
+
+  .Card-price {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .Card.null {
+    height: 514px;
+  }
+}
+
+@media screen and (max-width : 430px) {
+  .Card>img {
+    margin: 0 auto 15px auto;
+  }
+
+  .Card-author {
+    font-size: 16px;
+  }
+
+  .Card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .Card-materials {
+    font-size: 16px;
+  }
+
+  .Card-price {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Card.null {
+    height: 514px;
+  }
+}
+
+@media (hover:hover) {
+  .Card-tobasket:hover {
+    background-color: #598D66;
+    color: #F4F6F5;
+  }
+}

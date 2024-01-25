@@ -1,0 +1,113 @@
+.Team {
+  display: flex;
+  justify-content: center;
+  margin: 70px auto;
+}
+
+.Team-container {
+  display: flex;
+}
+
+.Team-content-persons-person:not(:last-child) {
+  margin-right: 30px;
+}
+
+.Team-content-title {
+  font-weight: 500;
+}
+
+.Team-content-paragraph {
+  margin: 0 0 20px 0;
+  line-height: 27px;
+}
+
+@media screen and (min-width : 1024px) {
+  .Team-hand {
+    height: 440px;
+    width: 445px;
+  }
+
+  .Team-content-title {
+    font-size: 40px;
+    margin: 0px 0px 20px 0;
+  }
+
+  .Team-content-paragraph {
+    font-size: 18px;
+  }
+
+  .Team-content {
+    margin-left: 30px;
+    margin-top: 124px;
+  }
+}
+
+@media screen and (min-width : 769px) and (max-width : 1024px) {
+  .Team-hand {
+    height: 504px;
+    width: 510px;
+    margin-bottom: 40px;
+  }
+
+  .Team-content-title {
+    font-size: 24px;
+    margin: 0px 0px 30px 0;
+  }
+
+  .Team-content-paragraph {
+    font-size: 18px;
+  }
+
+  .Team-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width : 768px) and (min-width: 431px) {
+  .Team-hand {
+    height: 370px;
+    width: 375px;
+    margin-bottom: 30px;
+  }
+
+  .Team-content-title {
+    font-size: 24px;
+    margin: 0px 0px 20px 0;
+  }
+
+  .Team-content-paragraph {
+    font-size: 16px;
+  }
+
+  .Team-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width : 430px) {
+  .Team-hand {
+    height: 286px;
+    width: 290px;
+    margin-bottom: 30px;
+  }
+
+  .Team-content-title {
+    font-size: 24px;
+    margin: 0px 0px 20px 0;
+  }
+
+  .Team-content-paragraph {
+    font-size: 16px;
+  }
+
+  .Team-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Team-content-persons-person:not(:last-child) {
+    margin-right: 25px;
+  }
+}

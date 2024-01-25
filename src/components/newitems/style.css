@@ -1,0 +1,142 @@
+.Newitems {
+  background: linear-gradient(to right, #0D2B43CC 20%, transparent), url('D:\study\Ink-house\public\newitem.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  display: flex;
+  margin: 100px auto;
+  justify-content: center;
+}
+
+.Newitems-blocktitle {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.Newitems-blocktitle-title {
+  color: #F4F6F5;
+  font-weight: 500;
+}
+
+.Newitems-content-description {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.Newitems-content-description-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.Newitems-content-description-paragraph:first-child {
+  margin-top: 0;
+}
+
+.Newitems-content-acquainted {
+  margin: 60px 0px 70px 0;
+  background-color: #EEDB6D;
+  padding: 21px 60px;
+  font-size: 20px;
+}
+
+@media screen and (min-width : 1024px) {
+  .Newitems-content {
+    width: 50%;
+  }
+
+  .Newitems-content-description {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .Newitems-blocktitle-title {
+    font-size: 40px;
+  }
+
+  .Newitems-blocktitle>img {
+    height: 80px;
+    width: 80px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width : 769px) and (max-width : 1024px) {
+
+  .Newitems-content {
+    width: 100%;
+  }
+
+  .Newitems-content-description {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .Newitems-blocktitle-title {
+    font-size: 30px;
+  }
+
+  .Newitems-blocktitle>img {
+    height: 60px;
+    width: 60px;
+    padding-right: 20px;
+  }
+
+}
+
+@media screen and (max-width : 768px) and (min-width: 431px) {
+  .Newitems-content {
+    width: 100%;
+  }
+
+  .Newitems-content-description {
+    margin-top: 21px;
+    font-size: 16px;
+  }
+
+  .Newitems {
+    background-position: center;
+  }
+
+  .Newitems-blocktitle-title {
+    font-size: 24px;
+  }
+
+
+  .Newitems-blocktitle>img {
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width : 430px) {
+  .Newitems {
+    background-position: center;
+    margin: 315px auto 0 auto;
+  }
+
+  .Newitems-blocktitle-title {
+    font-size: 24px;
+  }
+
+  .Newitems-content-description {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .Newitems-blocktitle>img {
+    height: 50px;
+    width: 50px;
+    padding-right: 10px;
+  }
+
+  .Newitems-content-acquainted {
+    width: 100%;
+  }
+}
+
+@media (hover:hover) {
+  .Newitems-content-acquainted:hover {
+    background-color: #FAEB97;
+  }
+}

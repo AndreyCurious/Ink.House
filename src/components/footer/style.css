@@ -1,0 +1,247 @@
+.Footer {
+  display: flex;
+  justify-content: center;
+  background-color: #E1EDE6;
+}
+
+.mobile {
+  display: none;
+}
+
+.Footer-content-first-items_container-logo {
+  display: flex;
+  align-items: center;
+}
+
+.Footer-content-second-socials-title {
+  color: #86928B;
+  font-size: 12px;
+}
+
+.Footer-content {
+  display: flex;
+  margin: 23px 0;
+  justify-content: space-between;
+}
+
+.Footer-content-li {
+  padding: 0;
+  margin: 0;
+}
+
+.Footer-content-li.title {
+  padding: 0;
+}
+
+.Footer-content-ul {
+  display: flex;
+}
+
+.Footer-content-li>li {
+  list-style-type: none;
+  margin-bottom: 6px;
+}
+
+.Footer-content-li>li:first-child {
+  font-weight: 500;
+  color: #2C2D35;
+}
+
+.Footer-content-li>li:not(:first-child) {
+  font-weight: 500;
+  color: #86928B;
+}
+
+.Footer-content-second {
+  display: flex;
+}
+
+.Footer-content-second-socials-icons>img:not(:last-child) {
+  margin-right: 33px;
+}
+
+.Footer-content-second-socials-icons {
+  display: flex;
+}
+
+
+@media screen and (min-width : 1024px) {
+  .Footer-content-ul {
+    margin-right: 248px;
+  }
+
+  .Footer-content-li.title {
+    margin-top: 35px;
+  }
+
+  .Footer-content-li>li:first-child {
+    font-size: 20px;
+  }
+
+  .Footer-content-li>li:not(:first-child) {
+    font-size: 18px;
+  }
+
+  .Footer-content-li:not(:nth-child(2)) {
+    margin-left: 33px;
+  }
+
+}
+
+@media screen and (min-width : 769px) and (max-width : 1024px) {
+  .Footer-content-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+  }
+
+  .Footer-content {
+    flex-direction: column
+  }
+
+  .Footer-content-second {
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .Footer-content-second-socials {
+    width: 170px;
+  }
+
+  .Footer-content-li>li:first-child {
+    font-size: 20px;
+  }
+
+  .Footer-content-li>li:not(:first-child) {
+    font-size: 18px;
+  }
+
+  .Footer-content-li:not(:nth-child(2)) {
+    margin-left: 33px;
+  }
+
+}
+
+@media screen and (max-width : 768px) and (min-width: 431px) {
+  .Footer-content-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 30px;
+  }
+
+  .Footer-content {
+    flex-direction: column
+  }
+
+  .Footer-content-second {
+    flex-direction: column;
+  }
+
+  .Footer-content-ul {
+    justify-content: space-between;
+    margin-bottom: 16px;
+    border-bottom: 1px #C3D1C6 solid;
+  }
+
+
+  .Footer-content-second-socials-title {
+    display: flex;
+  }
+
+  .Footer-content-second-socials {
+    margin: 0 auto;
+  }
+
+  .Footer-content-second-socials-icons {
+    justify-content: center;
+  }
+
+  .Footer-content-li>li:first-child {
+    font-size: 20px;
+  }
+
+  .Footer-content-li>li:not(:first-child) {
+    font-size: 16px;
+  }
+
+  .Footer-content-li:not(:nth-child(2)) {
+    margin-left: 33px;
+  }
+
+}
+
+@media screen and (max-width : 430px) {
+  .Footer-content-first {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    width: 50%;
+  }
+
+  .Footer-content {
+    display: inline;
+    flex-direction: column;
+    white-space: nowrap;
+  }
+
+  .Footer-content-second {
+    flex-direction: column;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .Footer-content-ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    border-bottom: 1px #C3D1C6 solid;
+  }
+
+  .Footer-content-ul>ul {
+    padding-bottom: 20px;
+  }
+
+  .Footer-content-li>li {
+    font-size: 16px;
+    width: 50%;
+    margin: 0;
+  }
+
+  .notmobile {
+    display: none;
+  }
+
+  .Footer-content-li {
+    width: 40%;
+  }
+
+  .Footer-content-li.body {
+    margin: 0;
+  }
+
+  .Footer-content-second-socials-title {
+    display: flex;
+  }
+
+  .Footer-content-second-socials {
+    margin: 0 auto;
+  }
+
+  .Footer-content-second-socials-icons {
+    justify-content: center;
+  }
+
+  .Footer-content-li>li:first-child {
+    font-size: 16px;
+  }
+
+  .Footer-content-li>li:not(:first-child) {
+    font-size: 16px;
+  }
+
+}
