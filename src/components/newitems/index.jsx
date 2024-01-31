@@ -2,9 +2,9 @@ import React from "react";
 import './style.css';
 import PageLayout from "../pagelayout";
 
-function Newitems() {
+function Newitems({ refItem }) {
   return (
-    <div className="Newitems">
+    <div className="Newitems" ref={refItem}>
       <PageLayout>
         <div className="Newitems-content">
           <div className="Newitems-blocktitle">

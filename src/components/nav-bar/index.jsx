@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './style.css';
 import PageLayout from "../pagelayout";
 
-function Navbar() {
+function Navbar({ scrollTo, reproductionsRef, newitemsRef, aboutUsRef }) {
   const [activeMenu, setActive] = useState(false);
   return (
     <header>
@@ -16,9 +16,9 @@ function Navbar() {
                 <span></span>
               </div>
               <div className="Navbar-items_container-items-menu">
-                <button className="Navbar-items_container-items-menu-button">Репродукции</button>
-                <button className="Navbar-items_container-items-menu-button">Новинки</button>
-                <button className="Navbar-items_container-items-menu-button">О нас</button>
+                <button onClick={() => scrollTo(reproductionsRef)} className="Navbar-items_container-items-menu-button">Репродукции</button>
+                <button onClick={() => scrollTo(newitemsRef)} className="Navbar-items_container-items-menu-button">Новинки</button>
+                <button onClick={() => scrollTo(aboutUsRef)} className="Navbar-items_container-items-menu-button">О нас</button>
               </div>
               <button className={`Navbar-items_container-items-basket ${activeMenu ? 'active' : ''}`} />
             </div>

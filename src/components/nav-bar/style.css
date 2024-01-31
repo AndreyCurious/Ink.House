@@ -38,15 +38,11 @@ button {
   height: 24px;
   width: 24px;
   background-repeat: no-repeat;
-  background-image: url('D:\study\Ink-house\public\shopping-cart.png');
-}
-
-.Navbar-items_container-items-basket:hover {
-  background-image: url('D:\study\Ink-house\public\shopping-cart-hover.png');
+  background-image: url('../../../public/shopping-cart.png');
 }
 
 .Navbar-items_container-items-basket:active {
-  background-image: url('D:\study\Ink-house\public\shopping-cart-active.png');
+  background-image: url('../../../public/shopping-cart-active.png');
   position: relative;
   top: -1px;
   left: -1px;
@@ -232,5 +228,9 @@ button {
 @media (hover:hover) {
   .Navbar-items_container-items-menu>button:hover {
     color: #598D66;
+  }
+
+  .Navbar-items_container-items-basket:hover {
+    background-image: url('../../../public/shopping-cart-hover.png');
   }
 }

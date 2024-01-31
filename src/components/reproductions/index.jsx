@@ -3,7 +3,7 @@ import PageLayout from "../pagelayout";
 import './style.css';
 import Card from "../card";
 
-function Reproductions() {
+function Reproductions({ refItem }) {
   const data = ['Франция', 'Германия', 'Англия'];
   const [active, setActive] = useState(0);
   const [loading, setLoading] = useState(false)
@@ -36,7 +36,7 @@ function Reproductions() {
     }, 1000)
   }
   return (
-    <div className="Reproductions">
+    <div className="Reproductions" ref={refItem}>
       <PageLayout>
         <div className="Reproductions-navbar">
           <span className="Reproductions-navbar-title">Репродукции</span>

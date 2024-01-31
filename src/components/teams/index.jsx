@@ -2,11 +2,11 @@ import React from "react";
 import './style.css';
 import PageLayout from "../pagelayout";
 
-function Team() {
+function Team({ refItem }) {
   return (
     <div className="Team">
       <PageLayout>
-        <div className="Team-container">
+        <div className="Team-container" ref={refItem}>
           <img className="Team-hand" src="./hand.png" alt="team" />
           <div className="Team-content">
             <h2 className="Team-content-title">Наша команда</h2>
